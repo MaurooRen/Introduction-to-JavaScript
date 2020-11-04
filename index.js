@@ -169,13 +169,16 @@ const ramdomComputer = Math.random();
 
 function getOptionGame(n) {
   var result
-  if(n >= 0 && n <= 0.33) {
-    result = 'rock'
-  } else if (n >= 0.34 && n <= 0.66) {
-    result = 'paper'
-  } else if (n >= 0.67 && n <= 1) {
-    result = 'scissors'
-  }
+  // if(n >= 0 && n <= 0.33) {
+  //   result = 'rock'
+  // } else if (n >= 0.34 && n <= 0.66) {
+  //   result = 'paper'
+  // } else if (n >= 0.67 && n <= 1) {
+  //   result = 'scissors'
+  // }
+
+  result = n
+
   return result
 }
 
