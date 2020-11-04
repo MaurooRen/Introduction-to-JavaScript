@@ -321,9 +321,33 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
+function vowelLook(letter) {
+  var result
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+  if((letter == 'a') || (letter == 'A') ||
+    (letter == 'e') || (letter == 'E') ||
+    (letter == 'i') || (letter == 'I') ||
+    (letter == 'o') || (letter == 'O') ||
+    (letter == 'u') || (letter == 'U'))
+    {
+      result = true
+    }
+  return result
+}
+
+function vowelCounter(str1) {
+    var word = []
+    word = str1.split('')
+    var numVowels = 0
+
+    for(var i = 0; word.length > i; i++) {
+      if(vowelLook(word[i]))
+      {
+        numVowels++
+      }
+    }
+
+    return numVowels
 }
 
 
